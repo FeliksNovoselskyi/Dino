@@ -1,3 +1,4 @@
+/* Classes */
 .game {
     width: 600px;
     height: 210px;
@@ -5,14 +6,13 @@
     margin-top: 300px;
     margin-left: 625px;
 }
-/* #game-over {
-    width: 75px;
-    height: 50px;
-    margin-left: 300px;
-    margin-top: -20px;
-    background-image: url(images/hero/4.png);
-} */
 
+.jump {
+    animation: jump 0.5s linear;
+}
+
+
+/* Id */
 #cloud-up {
     width: 50px;
     height: 50px;
@@ -33,42 +33,6 @@
     top: -50px;
     left: 475px;
     animation: cloudDownMove 9s infinite linear;
-}
-
-@keyframes cloudUpMove {
-    0% {
-        left: 475px;
-    }
-    25% {
-        top: -95px;
-    }
-    50% {
-        top: -100px;
-    }
-    75% {
-        top: -95px;
-    }
-    100% {
-        left: 0px;
-    }
-}
-
-@keyframes cloudDownMove {
-    0% {
-        left: 550px;
-    }
-    25% {
-        top: -65px;
-    }
-    50% {
-        top: -50px;
-    }
-    75% {
-        top: -65px;
-    }
-    100% {
-        left: 0px;
-    }
 }
 
 #dinosaur {
@@ -117,6 +81,44 @@
     user-select: none;
 }
 
+
+/* keyframes (Animations) */
+@keyframes cloudUpMove {
+    0% {
+        left: 475px;
+    }
+    25% {
+        top: -95px;
+    }
+    50% {
+        top: -100px;
+    }
+    75% {
+        top: -95px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes cloudDownMove {
+    0% {
+        left: 550px;
+    }
+    25% {
+        top: -65px;
+    }
+    50% {
+        top: -50px;
+    }
+    75% {
+        top: -65px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
 @keyframes cactusMov {
     0% {
         left: 580px;
@@ -124,10 +126,6 @@
     100% {
         left: -20px;
     }
-}
-
-.jump {
-    animation: jump 0.5s linear;
 }
 
 @keyframes jump {
